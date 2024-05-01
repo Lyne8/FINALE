@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+}
+h1
+{
+background-color: green;
+font-family: 'Times New Roman', Times, serif;
+font-size:3vw;
+text-align: center;
+padding-top: 1vw;
+height: 9vw;
+}
+.ul li li li {
+
+color: #000;
+}
+ul li{
+list-style: none;
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.8vw;
+color:black;
+
+}
+ul li li { font-size: 1.5vw;
+    color:green;
+    font-size: 2vw;
+    font-weight: bolder;
+
+
+}
+
+
+/* footer */
+footer{
+    height: 35rem;
+    background-color:#1A2C04;
+    padding: 4rem 1rem;
+}
+footer a .back-to-top{
+    text-align: right;
+    color: #000;
+    text-decoration: none;
+}
+footer div{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+footer div b{
+    color: #000;
+    text-decoration: none;
+}
+footer .logo1 img {
+    width: 15vw;
+    margin-top: -8vw; /*push icon upwards*/
+
+}
+
+
+/* quick links */  /* top destination */ /*Contact_Information*/
+footer div .quick_link ul li , .Top_Destinations ul li , .Contact_Information ul li ,.Top_Tour_packages ul li{
+    list-style: none;
+    font-size: 1.5vw;
+    margin-top: 1rem;
+    
+}
+
+
+/* quick links */
+footer div .quick_link ul li a{
+    text-decoration: none;
+    color:white;
+  
+}
+footer div .quick_link ul li a:hover{
+    color:orange;
+}
+
+/* top destination */
+footer div .Top_Destinations ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div .Top_Destinations ul li a:hover{
+    color:orange;
+}
+
+/* top tour packages */
+footer div .Top_Tour_packages ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div .Top_Tour_packages ul li a:hover{
+    color:orange;
+}
+
+footer .Contact_Information ul li{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

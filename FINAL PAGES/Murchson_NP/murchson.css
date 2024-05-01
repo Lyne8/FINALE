@@ -1,0 +1,169 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{background-color: rgb(237, 230, 230);}
+/*  header */
+header{
+    height:7rem;
+    width: 100%;
+    display: flex;  /* make logo and title in same line */
+    
+}
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+}
+
+header img{
+    margin-top: -2.05rem;  /* push logo to position up */
+    width: 15vw;
+    height:8rem;
+}
+
+header span{
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: 'Times New Roman';
+    margin-left: 10rem;
+    padding-top: 2rem;
+    color:green;
+}
+
+
+/* navigation bar */
+nav{
+    background-color: #438003;
+    height: 6.8rem;
+    padding-top: 0.5rem;  
+    overflow: visible; 
+    z-index: 2;
+
+    
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: right;
+    margin: 1rem 2rem 0 0;
+    font-size: 1.6vw;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+
+
+/* destination_dropdown */
+.destination_dropdown {
+    display: table-row;
+    visibility: hidden;
+    position: absolute; /* Ensure absolute positioning for z-index to work */
+    z-index: 3; /* Set a higher z-index */
+}
+.destination_dropdown li a{ color: black; font-weight: 800;}
+
+#destination:hover .destination_dropdown{
+    visibility: visible;
+    color: red;
+}
+#destination .destination_dropdown li a:hover{color: red;}
+
+/* ................notess.................. */
+.notes{
+    margin: 4vw 0 0 5vw;
+    line-height: 2.8vw;
+}
+.notes p{
+    font-size: 1.7vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.npheading h1{
+    font-size: 20px;
+    text-align: center;
+}
+.notes h1{
+    font-size: 2vw;
+    color:#438003;
+}
+.notes ul li{
+    font-size: 1.7vw;
+    list-style: circle;
+}
+
+
+/* footer */
+footer{
+    height: 35rem;
+    background-color:#1A2C04;
+    padding: 4rem 1rem;
+}
+
+footer div{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer .logo1 img {
+    width: 15vw;
+    margin-top: -6vw; /*push icon upwards*/
+
+}
+
+
+/* quick links */  /* top destination */ /*Contact_Information*/
+footer div .quick_link ul li , .Top_Destinations ul li , .Contact_Information ul li ,.Top_Tour_packages ul li{
+    list-style: none;
+    font-size: 1.5vw;
+    margin-top: 1rem;
+    
+}
+
+
+/* quick links */
+footer div .quick_link ul li a{
+    text-decoration: none;
+    color:white;
+  
+}
+footer div .quick_link ul li a:hover{
+    color:orange;
+}
+
+/* top destination */
+footer div .Top_Destinations ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div .Top_Destinations ul li a:hover{
+    color:orange;
+}
+
+/* top tour packages */
+footer div .Top_Tour_packages ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div .Top_Tour_packages ul li a:hover{
+    color:orange;
+}
+

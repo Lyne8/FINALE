@@ -1,0 +1,384 @@
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  header */
+header{
+    position:static;
+    height:5rem;
+    width: 100%;
+    display: flex;  /* make logo and title in same line */
+    
+}
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .header-right {
+      float: none;
+    }
+}
+
+header img{
+    margin-top: -1.5rem;  /* push logo to position up */
+    width: 15vw;
+    height:8rem;
+}
+
+header span{
+    font-size: 3vw;
+    font-weight: 900;
+    font-family: 'Times New Roman';
+    margin-left: 10rem;
+    padding-top: 2rem;
+    color:green;
+}
+
+
+/* navigation bar */
+
+ nav{
+    width: 100%;
+    background-color: #438003;
+    height: 5.2rem;
+    padding-top: 0.5rem;  
+    overflow:hidden; 
+    z-index: 2;
+    position:static;
+
+    
+} 
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    justify-content: right;
+    margin: 1rem 2rem 0 0;
+    font-size: 2vw;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: black;
+}
+/* BACKGROUND IMAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE */
+.bgimg{
+    position: relative;
+    width: 100%;
+}
+.bgimg.img.text{
+    color:blue;
+    position: absolute;
+    top:50%
+    
+}
+
+
+/* destination_dropdown */
+.services_dropdown {
+    display: table-row;
+   margin-top: -0.1vw;
+    visibility: hidden;
+    position: absolute; /* Ensure absolute positioning for z-index to work */
+    z-index: 3; /* Set a higher z-index */
+}
+#services_dropdown li a{ color: black; font-weight: 200;}
+
+#services:hover .services_dropdown{
+    visibility: visible;
+    color: red;
+}
+#services .services_dropdown li a:hover{color: red;}
+
+
+.destination_dropdown {
+    display: table-row;
+    width: 25vw;
+   margin-top: -0.1vw;
+    visibility: hidden;
+    position: absolute; /* Ensure absolute positioning for z-index to work */
+    z-index: 3; /* Set a higher z-index */
+
+    background-color: #438003;
+    border-radius: 0  0 5px 5px;
+    padding: 1vw 1.5vw;
+}
+.destination_dropdown li a{ 
+    color:black;
+    
+    font-size: 1.5vw;
+    text-decoration: solid;
+
+
+}
+
+.destination:hover .destination_dropdown{
+    visibility: visible;
+    color: blue;
+}
+.destination .destination_dropdown li a:hover{color: red;}/* slider */
+/* .......................slider.............................. */
+
+
+/*.sectionslider .slider{
+    overflow:hidden; 
+    /* width:750px;    
+    width: 100%;
+}
+
+.sectionslider .slider figure{
+    width: 500%;
+    /* margin-right: 1rem; 
+    animation-delay: 30s;
+    animation: 25s slider infinite;
+    display: flex;
+    position: relative; /*  
+    left: 0; /*  initial position 
+    z-index: 2;      customize to make dropdown overlay slider 
+}
+
+
+.sectionslider .slider figure .slide1{
+    background-image: url("../images/slider/slide\ 1.png");
+    background-repeat: no-repeat;
+    width:750px;
+    height: 500px; 
+}
+.sectionslider .slider figure .slide2{
+   background-image: url("../images/slider/slide\ 2.png");
+   background-repeat: no-repeat;
+   /* background-size: cover; *
+   width:750px;
+   height: 500px;
+
+}
+.sectionslider .slider figure .slide3{
+    background-image: url(".slide2");
+    background-repeat: no-repeat;
+    /* background-size: cover; *
+    width:750px;
+    height: 500px;
+
+}
+.sectionslider .slider figure .slide4{
+    background-image: url("../FINAL IMAGES/buffalo.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; 
+    width:750px;
+    height: 500px;
+
+}
+
+
+
+
+@keyframes slider {
+
+    0%{
+        left: 0%;
+    }
+    40%{
+        left: -130%;
+    }
+
+    80%{
+        left: -260%;
+    }
+  
+    100%{
+        left: -390%;
+    }
+   
+}
+
+
+
+/*   
+.sectionslider{
+    display: flex;
+    width: 100%;
+}
+
+.sectionslider .image{
+    background-image: url(.slide2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 9rem;
+}
+
+.sectionslider .image h4{
+ font-size: 2vw;
+font-weight: 900;
+font-family: 'Times New Roman';
+color:#438003;
+
+}*/
+.slider-frame{
+    overflow: hidden;
+
+
+  }
+   .slider-frame .slider-images img{
+    width:100%;
+    height:500px;
+   }
+   /*SECTIONC*/
+   .sectionC{
+    padding: 5vw;
+
+    color:rgb(111, 114, 111);
+    font-size: 1.9vw;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 22rem;
+    text-align: center;
+    
+   }
+   .sectionC P{
+    color:forestgreen;
+    font-size: 2.3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    flex-wrap: wrap;
+    font-style: bold;
+    text-align: center;
+    
+   }
+   .quote{
+    color: forestgreen ;
+    height:10vh;
+    font-size: 2.1vw;
+    font-weight: 50;}
+
+.quote p{
+    font-style: italic;
+    font-family:cursive;
+    
+   }
+
+  
+
+
+
+
+/* footer */
+footer{
+    height: 35rem;
+    background-color:#1A2C04;
+    padding: 4rem 1rem;
+}
+
+footer div{
+    display: flex;
+    gap: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer .logo1 img {
+    width: 15vw;
+    margin-top: -6vw; /*push icon upwards*/
+
+}
+
+
+/* quick links */  /* top destination */ /*Contact_Information*/
+footer div .quick_link ul li , .Top_Destinations ul li , .Contact_Information ul li ,.Top_Tour_packages ul li{
+    list-style: none;
+    font-size: 1.5vw;
+    margin-top: 1rem;
+    
+}
+/* footer image icons */
+footer div .Contact_Information img{
+    width: 2vw;
+    margin-right: 1vw;
+
+
+}
+
+/* quick links */
+footer div .quick_link ul li a{
+    text-decoration: none;
+    color:white;
+  
+}
+/* footer div .quick_link ul li a:hover{
+    color:orange;
+} */
+
+/* top destination */
+footer div .Top_Destinations ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+footer div .Top_Destinations ul li a:hover{
+    color:orange;
+}
+
+/* top tour packages */
+footer div .Top_Tour_packages ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* footer div .Top_Tour_packages ul li a:hover{
+    color:orange;
+} */
+footer .copy{
+    color:white;
+    text-align: center;
+    margin-top: -5rem;
+    font-size: 2vw;
+    text-decoration: overline;
+    padding-left: 18vw;
+    padding-top: 9vw;
+}
+
+
+/* tour packs */
+.tourpacks{
+    
+    color:black;
+    position: center;
+    font-size: 1.3vw;
+}
+.tourpacks H2{
+    text-align: center;
+    padding-top: 2vw;
+}
+.tourpacks .s1 {
+    background-color:rgb(207, 245, 218);
+    display: flex;
+    padding: 2vw;
+    margin:5vw 0 5vw 0 ;
+}
+.tourpacks .s1  img,.tourpacks .s2  img{
+    width: 30vw;
+    height: 60vh;
+    padding: 2vw;
+    border-radius: 10%;
+}
+.tourpacks .s1 div{
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out,baground-color 0.5s ease-in-out;
+}
+.tourpacks .s1 div:hover{
+transform: scale(1.1);
+}
+
+.tourpacks .s1 .ptitle{
+    font-size: 1.5vw;
+    font-weight: 900;
+}
