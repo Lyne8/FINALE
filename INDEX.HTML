@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./FINAL PAGES/HOME PAGES/INDEX CSS.CSS">
+    <link rel="icon" type="image/png" href="./IMGX/logox.png">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <img src="./IMGX/logox.png" > <!-- logo-->
+        <span>VICLYN TRAVEL AND TOURS AGENCY</span>
+    </header>
+    
+    <!-- navbar-->
+    <nav>
+        <ul>
+            <li><a href="././INDEX.HTML">HOME</a></li>
+            <li><a href="./FINAL PAGES/ABOUT US.html">ABOUT-US</a></li>
+            <li><a href="./FINAL PAGES/CONTACT US.HTML">CONTACT</a></li>
+            <li id="services"><a href="#">SERVICES</a>
+                <ul class="services_dropdown">
+                    <li><a href="./FINAL PAGES/ACCOMODATION.html">Accomodation</a></li>
+                   <li class="destination"><a href="#">Tours</a>
+                        <ul class="destination_dropdown">
+                            <li><a href="./FINAL PAGES/QUEEN_NP/QUEEN.html">3 days at Queen Elizabeth NP</a></li>
+                            <li><a href="./FINAL PAGES/KIDEPO_NP/KIDEPO.html"> 5 days at Kidepo Valley NP</a></li>
+                            <li><a href="./FINAL PAGES/bwindi_NP/BWINDI.html"> 3 days at Bwindi Impenetrable NP</a></li>
+                            <li><a href="./FINAL PAGES/kibale_NP/KIBALE.html">7days camping at Kibale Np</a></li>
+                            <li><a href="./FINAL PAGES/Semliki_NP/SEMLIKI.html">2 days at Semliki Np</a></li>
+                            <li><a href="./FINAL PAGES/Murchson_NP/murchison.html"> 3days at Murchison Falls Np</a></li>
+    
+                           
+                   
+                
+                   
+                        </ul>
+            
+               
+                    </li>
+                   
+                </ul>
+
+            
+            
+                        
+            </li>
+            <li><a href="./FINAL PAGES/portfolio.htm">PORTFOLIO</a></li>
+        </ul>
+                    </nav>
+    
+
+<!-- the slider start -->           
+<center>
+            <!-- <img src="./IMGX/tourism city.png" alt="" style="width: 100%;height:700px;">    slider backgroung img -->
+                
+            <div class="slider-frame">   
+                <div class="slider-images">
+                <img src="./IMGX/murchison.jpg" alt="">
+            </div>
+   
+            <div class="slider-images">
+                 <img src="./IMGX/chimpanzee.jpg" alt=" ">
+            </div>
+             
+            <div class="slider-images">
+                     <img src="./IMGX/crocodile shore.jpg" alt="">
+            </div>
+
+            <div class="slider-images">
+                     <img src="./IMGX/tea plantation.jpg" alt=""> 
+            </div>
+    
+            <div class="slider-images">
+                    <img src="./IMGX/zebra gl.jpg" alt=" @pro">
+            </div>
+
+            <div class="slider-images">
+                    <img src="./IMGX/herd of buffallos.jpg" alt="">
+            </div>
+
+            <div class="slider-images">
+                    <img src="./IMGX/bwindi.jpg" alt="">
+            </div>
+                            <!--<button class="next-btn" onclick="nextSlide()">&#10095;</button> -->
+</center>
+    
+
+<!-- backgroung image  -->
+
+ 
+     <script>
+         let slidesIndex = 0;
+     showSlides();
+         function showSlides() {
+     let x;
+     let slides = document.getElementsByClassName("slider-images");
+     for (x = 0; x<slides.length; x++) {
+    slides[x].style.display="none";
+     }
+     slidesIndex++;
+     if (slidesIndex > slides.length) { slidesIndex = 1}
+     
+     slides[slidesIndex-1].style.display = "block";
+     setTimeout(showSlides, 3000);
+         }
+         </script>
+
+    
+       <!-- the slider end -->
+
+<!-- space btn  -->
+<div class="sectionC">
+    
+   <p>VICLYN TRAVEL AND TOURS AGENCY is a uganda based eco-tourism and travel company  </p><br> 
+   That is situated in the western part of the country in FORT PORTAL TOURISM CITY<br> The western region  is richly endored with a beauty landscape
+    rain forests,wildlife,waterbodies .<br> 
+   <br>  We are specialized, fully registered by 
+   Uganda registration  service bureau,  proven  by trip advisor  as
+    the best safari company https://www.tripadvisor.com/Attraction<br>_Review-g608446-d10797880-Reviews
+    Viclyn_Tours and Travel Agency-Fort_Portal_Western_Region.html
+     ,licensed by Uganda Tourism Board and insured by swico insurance company 
+  https://www.swico.co.ug/<P>When u choose to travel and tour with
+   <p>VICLYN TRAVEL AND TOURS AGENCY</p>
+   <p>YOUR EXPECTATIONS AND IMAGINATIONS ARE TURNED IN TO REALITY</p>
+   <p>TRAVEL WITH US NOW  </p>
+</div>
+
+
+<br><br>
+
+
+<div>
+    <video src="./IMGX/60-Seconds-Of-Wild-Uganda.mp4" autoplay loop muted style="width:100%;height: 50vw; overflow: hidden;margin:10rem 0 0 0rem;"></video>
+</div>
+<!-- flex -->
+<div class="tourpacks">
+    <h2>TOUR  DESTINATIONS</h3>
+    <div class="s1">
+        <div><a href="./FINAL PAGES/QUEEN_NP/QUEEN.html"><img src="./IMGX/slider 6.png" ></a> <br><span class="ptitle">QUEEN ELIZABETH NATIONAL PARK.</span><br>
+        "The home of buffalos and kobs"</div>
+        <div><a href="./FINAL PAGES/KIDEPO_NP/KIDEPO.html"><img src="./IMGX/kidepo valley.jpg" ></a><span class="ptitle">KIDEPO VALLEY NATIONAL PARK</span><br>"The LION kingdom"Where the cat family rules</div>
+        <div><a href="./FINAL PAGES/Semliki_NP/SEMLIKI.html"><img src="./IMGX/semliki.png" ></a><span class="ptitle">SEMLIKI NATIONAL PARK.</span><br>"The land of HOTSPRINGS "</div>
+    </div>
+
+    <div class="s1">
+        <div><a href="./FINAL PAGES/kibale_NP/KIBALE.html"><img src="./IMGX/slider 5.png" ></a><br><span class="ptitle">KIBALE NATIONAL PARK.</span><br>"The land of the MONKEYS"</div>
+        <div><a href="./FINAL PAGES/Murchson_NP/murchison.html"><img src="./IMGX/murchison.jpg" ></a><br><span class="ptitle">MURCHISON FALLS NATIONAL PARK.</span><br>"The falls and reptiles residence"</div>
+        <div><a href="./FINAL PAGES/bwindi_NP/BWINDI.html"><img src="./IMGX/chimpanzee.jpg" ></a><br><span class="ptitle">BWINDI IMPENETRABLE<br>NATIONAL PARK.</span><br>"The CHIMPANZEES territory"</div>
+    </div>
+</div>
+<!-- sectionc xx -->
+<div class="sectionC">
+    
+    UGANDA is an African country located in the Eastern part of Africa <br> 
+   UGANDA is  known as a PEARL OF AFRICA and<br>  is richly endored with a beauty landscape
+    rain forests,wildlife,waterbodies .<br> 
+    UGANDA is the the source of the great Nile River that sustains various African countries 
+    and 
+    projects.<br> UGANDA the PEARL OF AFRICA is gifted with a favourable climate that favours agriculture that goes throughout the year<br>The Rich CULTURES in the country and the hospitality
+     of the natives makes it the best dream DESTINATION for any traveller and adventure seeker
+   
+</div>
+<div class="quote"><p>"The only person i really  envy is one who has never been to UGANDA because  he has so much to <BR>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    look forward to" </p>
+</div>
+<br><br><br>
+
+  
+
+
+
+<!-- footer -->
+<footer>
+    <div id="footerlink" >
+        <div  class="logo1">
+            <p> <img src="./IMGX/logox.png"><br>
+            Viclyn Travel & Tours Agency <br>
+             is an indegenous and<br>
+                 one of the premier <br>
+                Company based in  <br>
+                Fort Portal City <br>
+                Specialised in North <br>
+                East, West & Central Uganda</p>
+        </div>
+
+        <div class="quick_link">
+            <ul>
+                <li style="font-size: 2vw;"><b>Quick Links</b></li><br>
+                <li><a href="#">Gorilla Trekking Information</a></li>
+                <li><a href="#">Best Time to Travel</a></li>
+                <li><a href="#">Travel News</a></li>
+                <li><a href="#">Faqs</a></li>
+                <li><a href=".  /TERMS AND CONDS/terms and conditions.html">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="Top_Destinations">
+            <ul>
+                <li style="font-size: 2vw;"><b>Top Destinations</b></li><br>
+                <li><a href="./FINAL PAGES/KIDEPO_NP/KIDEPO.html">Kidepo valley National Park</a></li>
+                <li><a href="./FINAL PAGES/bwindi_NP/BWINDI.html">Bwindi Impenetrable National Park</a></li>
+                <li><a href="./FINAL PAGES/Murchson_NP/murchison.html">Murchison Falls National Park</a></li>
+                <li><a href="./FINAL PAGES/QUEEN_NP/QUEEN.html">Queen Elizabeth National Park</a></li>
+                <li><a href="./FINAL PAGES/kibale_NP/KIBALE.html">Kibale National Park</a></li>
+                <li><a href="./FINAL PAGES/Semliki_NP/SEMLIKI.html">semliki National Park</a></li>
+                <br><br>
+                <a href="#top" class="back-to-top" style="text-decoration: none;"><b style="color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#8593 Back to top</b></a><p>
+                    <a name="bottom"></a>
+                
+
+            </ul>
+        </div>
+
+        
+        <div class="Top_Tour_packages">
+            <ul>
+                <li style="font-size: 2vw;"><b>Top Tour Packages</b></li><br>
+                <li><a href="#">3 Days Bwindi Gorilla Trekking </a></li>
+                <li><a href="#">20 Days Uganda Birding Tour</a></li>
+                <li><a href="#">7 Days Murchson Falls tour</a></li>
+                <li><a href="#">3 Days at Mt Rwenzori</a></li>
+                <li><a href="#">7 Days at Queen Elizabeth Np </a></li>
+                </ul>
+        </div>
+
+        <div class="Contact_Information">
+            <ul>
+                <li style="font-size: 2vw;"><b>Contact Information</b></li><br>
+                <li><img src="./IMGX/211854_location_icon.png" alt="img">Fort Portal City, Uganda</li>
+                <li><img src="./IMGX/3669350_email_ic_icon.png" alt="">viclyntours@gmail.com</li>
+                <li>  info@viclyntours&travelagency</li>
+                <li><img src="./IMGX/icons/contact.png" alt="">+256-772-444-993</li>
+                <li><img src="./IMGX/icons/contact.png" alt="">+256-788-228-199</li>
+                <li><img src="./IMGX/172584_clock_icon.png" alt="">9 AM - 10 PM, Mon - Sat</li>   
+            </ul>
+        </div>
+
+    </div>
+
+   <br><br>
+    <hr>
+   <div class="copy" style="margin-top: -5rem;"> Viclyn Travel&Tours Agency,Copyright © 2024. All rights reserved.</div>
+
+</footer>
+
+</body>
+
+
+
+</html>
